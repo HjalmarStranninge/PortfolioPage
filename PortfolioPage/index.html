@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjalmar Stranninge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Hjalmar.</a>
+
+        <nav class="desktop-navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+        </nav>
+
+        <nav id="hamburger" role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Hjalmar Stranninge</h1>
+            <h3>Fullstack Developer</h3>
+            <p>Passionate about web development, I specialize in building intuitive and scalable digital solutions. With
+                a focus on
+                creativity and problem-solving, I strive to deliver impactful results.
+            </p>
+            <div class="button-box">
+                <a href="#">Download CV</a>
+                <a href="#contact-form">Get In Touch</a>
+            </div>
+
+            <div id="contact-form" class="modal">
+                <div class="modal-content">
+                    <a href="#" class="close-btn">&times;</a>
+                    <div class="modal-content-left">
+                        <img id="modal-img" src="Images/Contact2.svg" alt="">
+                    </div>
+                    <div class="modal-content-right">
+                        <form action="/" method="post" class="modal-form" id="form">
+                            <h1 id="contact-header">Get in touch with me!</h1>
+                            <div class="form-validation">
+                                <p class="form-header">Name</p>
+                                <input type="text" class="modal-input" id="name" name="name"
+                                    placeholder="Enter your name">
+                            </div>
+                            <div class="form-validation">
+                                <p class="form-header">Email</p>
+                                <input type="email" class="modal-input" id="email" name="email"
+                                    placeholder="Enter your email">
+                            </div>
+                            <div class="form-validation">
+                                <p class="form-header">Message</p>
+                                <textarea class="modal-message" id="message" name="message"
+                                    placeholder="Enter your message"></textarea>
+                            </div>
+                            <input type="submit" class="modal-input-btn" value="Submit">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="easter-egg" class="modal">
+                <div class="easter-egg-content">
+                    <p class="easter-egg-text" id="header">Congratulations!</p>
+                    <p class="easter-egg-text">You're the 1.000.000th visitor this week and have been selected for a
+                        chance to get the $1000 Amazon gift Card,
+                        Apple iPhone 15 Pro Max 512G
+                        or
+                        Samsung Galaxy S24 Ultra!</p>
+                    <p class="easter-egg-text">Hurry up and click OK to claim your reward before it expires!</p>
+                    <button id="close-easter-egg">Close</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/HjalmarStranninge"><i class='bx bxl-github'></i></a>
+        </div>
+    </section>
+    <script src="script.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjalmar Stranninge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Hjalmar.</a>
+
+        <nav class="desktop-navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="experience.html">Experience</a>
+        </nav>
+
+        <nav id="hamburger" role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="projects">
+
+        <div class="card-container">
+            <div class="project-card" id="netify">
+                <img src='./Images/netify.jpeg' alt="">
+                <div class="card-content">
+                    <h3>Netify</h3>
+                    <p>A school project where we integrated Spotify's web API into a simple application using Entity
+                        Framework, C# and SQL. Allows users to search tracks and artists and save them in their library.
+                    </p>
+                    <a href="https://github.com/HjalmarStranninge/Netify" class="button">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card" id="banknet">
+                <img src='./Images/BankNET.jpeg' alt="">
+                <div class="card-content">
+                    <h3>BankNET</h3>
+                    <p>Another school project where we created an ATM-like application where users can create an account
+                        which is stored in a database, deposit/withdraw and transfer (fake) money between accounts.</p>
+                    <a href="https://github.com/HjalmarStranninge/BankNET" class="button">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card" id="miniapi">
+                <img src='./Images/MiniAPI.jpg' alt="">
+                <div class="card-content">
+                    <h3>Mini API</h3>
+                    <p>My first API project where I learned to create a simple REST-API using C# which makes requests to
+                        a
+                        SQL database. Users can save their basic information, interests and link to websites related to
+                        their interests.</p>
+                    <a href="" class="button">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="easter-egg" class="modal">
+            <div class="easter-egg-content">
+                <p class="easter-egg-text" id="header">Congratulations!</p>
+                <p class="easter-egg-text">You're the 1.000.000th visitor this week and have been selected for a
+                    chance to get the $1000 Amazon gift Card,
+                    Apple iPhone 15 Pro Max 512G
+                    or
+                    Samsung Galaxy S24 Ultra!</p>
+                <p class="easter-egg-text">Hurry up and click OK to claim your reward before it expires!</p>
+                <button id="close-easter-egg">Close</button>
+            </div>
+
+        </div>
+    </section>
+    <script src="script.js"> </script>
+</body>
+
+</html>
